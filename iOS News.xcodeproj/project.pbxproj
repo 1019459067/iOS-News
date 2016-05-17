@@ -12,6 +12,10 @@
 		C99979A71CEB6C4800E8CE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99979A61CEB6C4800E8CE57 /* Assets.xcassets */; };
 		C99979AA1CEB6C4800E8CE57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99979A81CEB6C4800E8CE57 /* LaunchScreen.storyboard */; };
 		C99979BB1CEB6EDE00E8CE57 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99979BA1CEB6EDE00E8CE57 /* HomeViewController.m */; };
+		C99979CA1CEB716100E8CE57 /* navigationbar_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C61CEB716100E8CE57 /* navigationbar_setting@2x.png */; };
+		C99979CB1CEB716100E8CE57 /* navigationbar_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C71CEB716100E8CE57 /* navigationbar_setting@3x.png */; };
+		C99979CC1CEB716100E8CE57 /* tu_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C81CEB716100E8CE57 /* tu_empty@2x.png */; };
+		C99979CD1CEB716100E8CE57 /* tu_empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C91CEB716100E8CE57 /* tu_empty@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C99979AB1CEB6C4800E8CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C99979B91CEB6EDE00E8CE57 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		C99979BA1CEB6EDE00E8CE57 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C99979C61CEB716100E8CE57 /* navigationbar_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_setting@2x.png"; sourceTree = "<group>"; };
+		C99979C71CEB716100E8CE57 /* navigationbar_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_setting@3x.png"; sourceTree = "<group>"; };
+		C99979C81CEB716100E8CE57 /* tu_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu_empty@2x.png"; sourceTree = "<group>"; };
+		C99979C91CEB716100E8CE57 /* tu_empty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu_empty@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		C999799A1CEB6C4800E8CE57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C99979C51CEB716100E8CE57 /* Resources */,
 				C999799B1CEB6C4800E8CE57 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -90,6 +99,17 @@
 				C99979BA1CEB6EDE00E8CE57 /* HomeViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C99979C51CEB716100E8CE57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C99979C61CEB716100E8CE57 /* navigationbar_setting@2x.png */,
+				C99979C71CEB716100E8CE57 /* navigationbar_setting@3x.png */,
+				C99979C81CEB716100E8CE57 /* tu_empty@2x.png */,
+				C99979C91CEB716100E8CE57 /* tu_empty@3x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +169,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99979CB1CEB716100E8CE57 /* navigationbar_setting@3x.png in Resources */,
 				C99979AA1CEB6C4800E8CE57 /* LaunchScreen.storyboard in Resources */,
 				C99979A71CEB6C4800E8CE57 /* Assets.xcassets in Resources */,
+				C99979CA1CEB716100E8CE57 /* navigationbar_setting@2x.png in Resources */,
+				C99979CD1CEB716100E8CE57 /* tu_empty@3x.png in Resources */,
+				C99979CC1CEB716100E8CE57 /* tu_empty@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +332,7 @@
 				C99979B01CEB6C4900E8CE57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
