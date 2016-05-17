@@ -7,16 +7,67 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeTableView.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) HomeTableView *homeTableView;
+@property (nonatomic,strong) NSMutableArray *dataArr;
 
 @end
 
 @implementation HomeViewController
-
+- (NSMutableArray *)dataArr
+{
+    if (!_dataArr) {
+        _dataArr = [NSMutableArray array];
+    }
+    return _dataArr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configNav];
+    [self setUpView];
+}
+- (void)configNav
+{
+    self.title = @"iOS头条";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"navigationbar_setting"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:nil];
+}
+#pragma mark - setUpView
+- (void)setUpView{
+    [self.view addSubview:self.homeTableView];
+}
+
+- (HomeTableView *)homeTableView{
+    if (!_homeTableView) {
+        _homeTableView=[[HomeTableView alloc]initWithFrame:self.view.bounds];
+        _homeTableView.delegate = self;
+        _homeTableView.dataSource = self;
+        _homeTableView.rowHeight = 80;
+    }
+    return _homeTableView;
+}
+
+#pragma mark - UITableView delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataArr.count;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+#pragma mark - UITableView dataSource
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIde=@"cellIde";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIde];
+    if (!cell) {
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIde];
+    }
+        
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +75,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

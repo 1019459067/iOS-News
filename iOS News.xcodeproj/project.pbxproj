@@ -16,6 +16,7 @@
 		C99979CB1CEB716100E8CE57 /* navigationbar_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C71CEB716100E8CE57 /* navigationbar_setting@3x.png */; };
 		C99979CC1CEB716100E8CE57 /* tu_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C81CEB716100E8CE57 /* tu_empty@2x.png */; };
 		C99979CD1CEB716100E8CE57 /* tu_empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99979C91CEB716100E8CE57 /* tu_empty@3x.png */; };
+		C99979D11CEB728F00E8CE57 /* HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99979D01CEB728F00E8CE57 /* HomeTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		C99979C71CEB716100E8CE57 /* navigationbar_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_setting@3x.png"; sourceTree = "<group>"; };
 		C99979C81CEB716100E8CE57 /* tu_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu_empty@2x.png"; sourceTree = "<group>"; };
 		C99979C91CEB716100E8CE57 /* tu_empty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tu_empty@3x.png"; sourceTree = "<group>"; };
+		C99979CF1CEB728F00E8CE57 /* HomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableView.h; sourceTree = "<group>"; };
+		C99979D01CEB728F00E8CE57 /* HomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		C99979B41CEB6E7700E8CE57 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C99979CE1CEB727500E8CE57 /* View */,
 				C99979B81CEB6EDE00E8CE57 /* ViewController */,
 			);
 			path = Home;
@@ -110,6 +114,15 @@
 				C99979C91CEB716100E8CE57 /* tu_empty@3x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C99979CE1CEB727500E8CE57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C99979CF1CEB728F00E8CE57 /* HomeTableView.h */,
+				C99979D01CEB728F00E8CE57 /* HomeTableView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +200,7 @@
 			files = (
 				C999799F1CEB6C4800E8CE57 /* AppDelegate.m in Sources */,
 				C999799C1CEB6C4800E8CE57 /* main.m in Sources */,
+				C99979D11CEB728F00E8CE57 /* HomeTableView.m in Sources */,
 				C99979BB1CEB6EDE00E8CE57 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
